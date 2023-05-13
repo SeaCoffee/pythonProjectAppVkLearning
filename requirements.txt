@@ -1,0 +1,10 @@
+Flask>=2.1.1
+Flask-SQLAlchemy>=2.6.0
+Flask-Migrate>=3.2.0
+Flask-Cors>=3.0.10
+mysqlclient>=2.1.1
+gpt-2-simple>=0.8.1
+transformers>=4.12.2
+vk_api
+torch
+scikit-learn
