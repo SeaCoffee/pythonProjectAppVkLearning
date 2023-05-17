@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from .config import Config
+from config import Config
 from .database import db_session
 import vk_api
 from vk_api import VkApi
@@ -10,6 +10,8 @@ from vk_api.utils import get_random_id
 
 db = SQLAlchemy()
 migrate = Migrate()
+
+__all__ = ['create_app']
 
 def create_app():
     app = Flask(__name__)
@@ -37,4 +39,5 @@ def create_app():
     return app
 
 
-__all__ = ['create_app']
+
+
